@@ -20,13 +20,13 @@ namespace ContosoUniversity.ApiControllers
         private SchoolContext db = new SchoolContext();
 
         // GET: api/Courses
-        public IEnumerable<CoursesData> GetCourses()
+        public IEnumerable<CourseData> GetCourses()
         {
             // http://bengtbe.com/blog/2009/04/14/using-automapper-to-map-view-models-in-asp-net-mvc/
-            Mapper.CreateMap<Course, CoursesData>();
+            Mapper.CreateMap<Course, CourseData>();
 
             // https://lostechies.com/jimmybogard/2014/05/07/projecting-computed-properties-with-linq-and-automapper/
-            IEnumerable<CoursesData> coursesList = db.Courses.Project().ToList<CoursesData>();
+            IEnumerable<CourseData> coursesList = db.Courses.Project().ToList<CourseData>();
 
             //IEnumerable<Course> courses = db.Courses;
             //IEnumerable<CoursesData> coursesList = Mapper.Map<IEnumerable<Course>, IEnumerable<CoursesData>>(courses);
