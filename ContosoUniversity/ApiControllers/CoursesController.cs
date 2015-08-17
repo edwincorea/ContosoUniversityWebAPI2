@@ -15,7 +15,7 @@ using ContosoUniversity.Misc;
 
 namespace ContosoUniversity.ApiControllers
 {
-    public class CoursesController : ApiController
+    public class CoursesController : BaseAPIController
     {
         private SchoolContext db = new SchoolContext();
 
