@@ -150,6 +150,7 @@
   <ItemGroup>
     <Compile Include="ApiControllers\BaseAPIController.cs" />
     <Compile Include="ApiControllers\CoursesController.cs" />
+    <Compile Include="ApiControllers\DepartmentsController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -192,6 +193,10 @@
     <Compile Include="Migrations\201411022351064_Inheritance.cs" />
     <Compile Include="Migrations\201411022351064_Inheritance.Designer.cs">
       <DependentUpon>201411022351064_Inheritance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508242107008_IdentityColumns.cs" />
+    <Compile Include="Migrations\201508242107008_IdentityColumns.Designer.cs">
+      <DependentUpon>201508242107008_IdentityColumns.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Misc\MapperExtensions.cs" />
@@ -298,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201411022351064_Inheritance.resx">
       <DependentUpon>201411022351064_Inheritance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508242107008_IdentityColumns.resx">
+      <DependentUpon>201508242107008_IdentityColumns.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

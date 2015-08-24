@@ -7,6 +7,7 @@ namespace ContosoUniversity.Models
 {
     public class Department
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int DepartmentID { get; set; }
 
         [StringLength(50, MinimumLength = 3)]
